@@ -2,17 +2,18 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f9f9;
-  color: #222;
+  background-color: #121212;
+  color: #f1f1f1;
   line-height: 1.6;
 }
 
 h1, h2, h3 {
   margin-top: 0;
+  color: #ffffff;
 }
 
 a {
-  color: #0078D4;
+  color: #58a6ff;
   text-decoration: none;
 }
 
@@ -22,9 +23,10 @@ a:hover {
 
 /* Navigation */
 nav {
-  background-color: #0078D4;
+  background-color: #1f1f1f;
   padding: 1em 0;
   text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 nav ul {
@@ -39,15 +41,16 @@ nav li {
 }
 
 nav a {
-  color: white;
+  color: #f1f1f1;
   font-weight: bold;
 }
 
 /* Header */
 header#home {
   padding: 4em 2em;
-  background: #e6f0ff;
+  background: #1a1a1a;
   text-align: center;
+  border-bottom: 1px solid #333;
 }
 
 header h1 {
@@ -57,7 +60,7 @@ header h1 {
 
 header p {
   font-size: 1.2em;
-  color: #555;
+  color: #ccc;
 }
 
 /* Sections */
@@ -69,19 +72,27 @@ section {
 
 /* Certification Cards */
 .cert-card {
-  background: white;
+  background: #1e1e1e;
   padding: 1em 1.5em;
   margin: 1em 0;
   border-left: 5px solid #0078D4;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
 }
 
 .cert-card:hover {
   transform: scale(1.01);
 }
 
-/* Contact Links */
+.cert-card img {
+  width: 50px;
+  height: 50px;
+  margin-right: 1em;
+}
+
+/* Contact Section */
 #contact ul {
   list-style: none;
   padding-left: 0;
@@ -123,4 +134,14 @@ section {
   section {
     padding: 1.5em;
   }
+
+  .cert-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cert-card img {
+    margin-bottom: 0.5em;
+  }
 }
+
