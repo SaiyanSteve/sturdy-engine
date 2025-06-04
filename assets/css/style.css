@@ -120,6 +120,15 @@ section {
   background-color: #005a9e;
 }
 
+.cert-banner {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 0 auto 2em auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   nav li {
